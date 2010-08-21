@@ -1,6 +1,6 @@
-/* 
+/*
   style.css contains a reset, font normalization and some base styles.
-  
+
   credit is left where credit is due.
   additionally, much inspiration was taken from these projects:
     yui.yahooapis.com/2.8.1/build/base/base.css
@@ -8,7 +8,7 @@
     praegnanz.de/weblog/htmlcssjs-kickstart
 */
 
-/* 
+/*
   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
   v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
   html5doctor.com/html-5-reset-stylesheet/
@@ -23,7 +23,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin:0;
@@ -33,10 +33,10 @@ time, mark, audio, video {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
-}                  
+}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section { 
+footer, header, hgroup, menu, nav, section {
     display:block;
 }
 
@@ -79,33 +79,33 @@ table { font-size:inherit; font: 100%; }
 
 select, input, textarea, button { font:99% sans-serif; }
 
-/* normalize monospace sizing 
+/* normalize monospace sizing
  * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
  */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
- 
 
 
-/* 
- * minimal base styles 
+
+/*
+ * minimal base styles
  */
 
 
-/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
+/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
 body, select, input, textarea { color: #444; }
 
 /* Headers (h1,h2,etc) have no default font-size or margin,
-   you'll want to define those yourself. */ 
+   you'll want to define those yourself. */
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
-html { 
-  /* maxvoltar.com/archive/-webkit-font-smoothing */ 
-  -webkit-font-smoothing: antialiased; 
-  /* always force a scrollbar in non-IE */ 
+html {
+  /* maxvoltar.com/archive/-webkit-font-smoothing */
+  -webkit-font-smoothing: antialiased;
+  /* always force a scrollbar in non-IE */
   overflow-y: scroll;
 }
 
- 
+
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
@@ -119,14 +119,14 @@ ol { margin-left: 30px; list-style-type: decimal; }
 small { font-size: 85%; }
 strong, th { font-weight: bold; }
 
-td, td img { vertical-align: top; } 
+td, td img { vertical-align: top; }
 
 sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
 
-pre { 
-  padding: 15px; 
-  
+pre {
+  padding: 15px;
+
   /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
   white-space: pre; /* CSS2 */
   white-space: pre-wrap; /* CSS 2.1 */
@@ -149,26 +149,26 @@ input:invalid { background-color: #f0dddd; }
 input:valid   { background-color: #ddf0dd; }
 
 /* These selection declarations have to be separate.
-   No text-shadow: twitter.com/miketaylr/status/12228805301 
+   No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink. */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
 
 /*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; } 
+a:link { -webkit-tap-highlight-color: #FF5E99; }
 
-/* make buttons play nice in IE:    
+/* make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
- 
-/* bicubic resizing for non-native sized IMG: 
+
+/* bicubic resizing for non-native sized IMG:
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 
 
-/* 
- * Non-semantic helper classes 
+/*
+ * Non-semantic helper classes
  */
 
 /* for image replacement */
@@ -176,12 +176,12 @@ button {  width: auto; overflow: visible; }
 
 /* Hide for both screenreaders and browsers
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-.hidden { display: none; visibility: hidden; } 
+.hidden { display: none; visibility: hidden; }
 
-/* Hide only visually, but have it available for screenreaders 
-   www.webaim.org/techniques/css/invisiblecontent/ 
+/* Hide only visually, but have it available for screenreaders
+   www.webaim.org/techniques/css/invisiblecontent/
    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */
-.visuallyhidden { position: absolute !important;    
+.visuallyhidden { position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
@@ -194,11 +194,22 @@ button {  width: auto; overflow: visible; }
 
 
 
+/* ------------------------------------ UTIL (non-semantic helper classes) */
+
+ul.stack, ul.stack > li {padding:0px;margin:0px;list-style-type:none;}
+ul.bar {padding:0px;margin:0px;list-style-type:none;}
+ul.bar > li {float:left;list-style-type:none;}
+
+
+
+
+
+
 
 
 
  /* Primary Styles
-    Author: 
+    Author:
  */
 
 
@@ -211,23 +222,23 @@ button {  width: auto; overflow: visible; }
 
 
 
-/* 
+/*
  * print styles
- * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/
  */
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
 
   a, a:visited { color: #444 !important; text-decoration: underline; }
 
-  a:after { content: " (" attr(href) ")"; } 
+  a:after { content: " (" attr(href) ")"; }
 
   abbr:after { content: " (" attr(title) ")"; }
-  
+
   .ir a:after { content: ""; }  /* Don't show links for images */
-  
+
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  
+
   img { page-break-inside: avoid; }
 
   @page { margin: 0.5cm; }
@@ -243,23 +254,23 @@ button {  width: auto; overflow: visible; }
  * Media queries for responsive design
  */
 
-@media all and (orientation:portrait) { 
+@media all and (orientation:portrait) {
   /* Style adjustments for portrait mode goes here */
-  
+
 }
 
-@media all and (orientation:landscape) { 
+@media all and (orientation:landscape) {
   /* Style adjustments for landscape mode goes here */
-  
+
 }
 
-/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  
-  
+
+
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
-     j.mp/textsizeadjust 
+     j.mp/textsizeadjust
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
