@@ -105,6 +105,8 @@ html {
   overflow-y: scroll;
 }
 
+/* href is optional, but 'the hand' will not render without */
+a { cursor: pointer; }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
